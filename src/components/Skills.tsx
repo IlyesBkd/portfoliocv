@@ -3,6 +3,7 @@
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 import { skills } from "@/lib/data";
+
 import {
   Code2,
   Server,
@@ -10,9 +11,10 @@ import {
   Workflow,
   Users,
   Languages,
+  type LucideIcon,
 } from "lucide-react";
 
-const iconMap: Record<string, React.ComponentType<{ size?: number; className?: string }>> = {
+const iconMap: Record<string, LucideIcon> = {
   "Webmastering & CMS": Code2,
   "Architecture Tech": Server,
   "SEO & Analytics": Search,
